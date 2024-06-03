@@ -107,8 +107,8 @@ public void user_clicks_on_place_order() throws InterruptedException {
 public void user_should_not_be_able_to_order_and_should_get_an_error_message() throws InterruptedException {
 	Thread.sleep(2000);
 	op.errormsg();
-//    error=  op.errormsgs();
-	//System.out.println(error);
+  error=  op.errormsgs();
+System.out.println(error);
 
 
 }
