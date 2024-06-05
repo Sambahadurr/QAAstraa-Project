@@ -29,7 +29,7 @@ public class Base {
 		return getdriver();
 	}
 
-	public  WebDriver getdriver() {
+	public static  WebDriver getdriver() {
 		return tdriver.get();
 	}
 

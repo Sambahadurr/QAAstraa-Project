@@ -45,7 +45,7 @@ public class LoginStepDef extends Base {
 	
 	@Then("QA Astraa forgot password link should be present")
 	public void qa_astraa_forgot_password_link_should_be_present() throws InterruptedException {
-	    Thread.sleep(2000);
+	    Thread.sleep(4000);
 		lp.frgtpass();
 	}
 	

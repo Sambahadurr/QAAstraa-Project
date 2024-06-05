@@ -19,21 +19,24 @@
 @tag
 Feature: QA Astraa Login Feature
 
+Background:
+Given User is on QAAstraa page
+
   @tag1
   Scenario: QA Page Title
-    Given User is on QAAstraa page
+    #Given User is on QAAstraa page
     When User get the title of the QA Astraa page
     Then User should get page title as "QA-Astraa"
 
   @tag2
   Scenario: QA Astraa Forgot password Link
-    Given User is on QAAstraa page
+    #Given User is on QAAstraa page
     When User clicks on person icon
     Then QA Astraa forgot password link should be present
 
   @tag3
   Scenario Outline: QA Astraa Login Functionality
-    Given User is on QAAstraa page
+   # Given User is on QAAstraa page
     When User clicks on person icon
     And User inputs username "<username>"
     And User inputs password "<password>"

@@ -16,8 +16,8 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
-Feature: Order
+
+Feature: Add to cart Functionality
 
   @tag1
   Scenario Outline: Ordering an Item
