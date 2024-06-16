@@ -84,12 +84,12 @@ public void user_selects_state() throws InterruptedException {
     Select state=new Select(op.state());
     state.selectByVisibleText("Ontario");
 }
-@When("User inputs zipcode {string} and email {string} and phone number")
-public void user_inputs_zipcode_and_email_and_phone_number(String postalcode, String email) throws InterruptedException {
+@When("User inputs zipcode {string} and email {string} and {string}")
+public void user_inputs_zipcode_and_email_and_phone_number(String postalcode, String email, String phoneNumber) throws InterruptedException {
 	Thread.sleep(2000);
 	op.postalcode().sendKeys(postalcode);
 	Thread.sleep(2000);
-	op.phonenumber().sendKeys("123456789");
+	op.phonenumber().sendKeys(phoneNumber);
 	Thread.sleep(2000);
 	op.email().sendKeys(email);
 }

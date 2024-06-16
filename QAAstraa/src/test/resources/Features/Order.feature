@@ -32,11 +32,11 @@ Feature: Add to cart Functionality
     And User selects the country
     And User inputs street "<address>" and city "<city>"
     And User selects state
-    And User inputs zipcode "<zipcode>" and email "<email>" and phone number
+    And User inputs zipcode "<zipcode>" and email "<email>" and "<phonenumber>"
     And User enters special note
     And User clicks on place order
     Then User should not be able to order and should get an error message
 
     Examples: 
-      | item   | firstname | lastname | address | city      | zipcode | email                  | 
-      | iphone | Samarth   | Bhatt    | Verona | Kitchener | N2R1T9  | samarthbhatt@gmail.com |
+      | item   | firstname | lastname | address | city      | zipcode | email                  |phonenumber| 
+      | iphone | Samarth   | Bhatt    | Verona | Kitchener | N2R1T9  | samarthbhatt@gmail.com |123456789|
